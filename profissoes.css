@@ -59,31 +59,30 @@ header nav a {
 
 .header-nav a:hover:after {
     transform: scaleX(1);
-    transform-origin: bottom left; 
+    transform-origin: bottom left;
 }
 
 .menu-toggle img {
+    display: none;
     width: 35px;
     height: auto;
     cursor: pointer;
 }
 
-.x{
-    width: 20%;
-    position: relative;
-    bottom: 300px;
-    left: -10px;
+.menu-burger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    background: none;
+    border: none;
     cursor: pointer;
 }
 
-.menu-burguer{
-    display: none;
-}
-
-.container-menu{
+.container-menu {
     height: 80%;
-    width: 10%;
-    background-color: rgb(83, 149, 235);
+    width: 60%;
     border: solid 2px white;
     border-radius: 20px;
     display: flex;
@@ -93,7 +92,13 @@ header nav a {
     right: 0;
     top: 20px;
     visibility: hidden;
-    
+    opacity: 0;
+    transition: opacity 0.3s ease; 
+}
+
+.container-menu.active {
+    visibility: visible;
+    opacity: 1;
 }
 
 main {
@@ -192,12 +197,12 @@ main {
 }
 
 /* TELA INICIO DESKTOP */
-#inicio .conteudo h1{
+#inicio .conteudo h1 {
     font-size: 68px;
     color: white;
 }
 
-#inicio .conteudo p{
+#inicio .conteudo p {
     font-size: 22px;
     line-height: 1.6;
     margin-bottom: 30px;
@@ -214,6 +219,42 @@ main {
 
 /* Responsividade para tablet */
 @media(max-width: 1024px) and (min-width: 768px) {
+
+    .menu-toggle img {
+        display: block;
+        width: 35px;
+        height: auto;
+        cursor: pointer;
+    }
+
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 1000;
+    }
+
+    nav .header-nav.active {
+        display: block;
+        position: absolute;
+        top: 50px;
+        right: 10px;
+        background-color: #A8BF61;
+        color: white;
+        padding: 5px;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+        width: 80%;
+        max-width: 300px;
+    }
+
+    nav .header-nav li {
+        margin: 10px 0;
+    }
+
     header {
         padding: 20px;
     }
@@ -230,17 +271,14 @@ main {
         padding: 10px 20px;
         font-size: 1.1rem;
         color: white;
-        background-color: #5C7437;
+        background-color: #A8BF61;
         text-align: center;
         border-radius: 5px;
+        transition: background-color 0.3s ease, color 0.3s ease;
     }
 
     header nav a:hover {
-        background-color: #2f6226;
-    }
-
-    .container-menu {
-        visibility: hidden;
+        color: #f0f0f0;
     }
 
     .container {
@@ -276,25 +314,118 @@ main {
         font-size: 1.1rem;
     }
 
-    .menu-toggle {
-        display: block;
-        cursor: pointer;
-        font-size: 30px;
-        color: white;
-    }
-
-    .menu-toggle.open + nav ul {
-        display: flex;
-    }
-
-    /* Ajuste específico para imagens dentro de seções */
     .section img {
-        max-height: 300px; /* Limita a altura máxima das imagens */
-        object-fit: contain; /* Redimensiona a imagem proporcionalmente para caber no contêiner */
+        max-height: 300px;
+        object-fit: contain;
     }
 
-    /* Garantindo espaçamento entre as seções */
     .section + .section {
         margin-top: 300px;
     }
+
 }
+
+/* Responsividade para mobile (iPhone SE e afins) */
+@media (max-width: 768px) {
+    header {
+      padding: 10px;
+      height: auto;
+    }
+  
+    header nav ul {
+      display: none;
+    }
+  
+    .menu-toggle img {
+      display: block;
+      width: 30px;
+      cursor: pointer;
+    }
+  
+    .container-menu {
+      height: 90%;
+      width: 90%;
+      right: 5%;
+      top: 5%;
+      border-radius: 10px;
+    }
+  
+    .container {
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+      width: 90%;
+    }
+  
+    .conteudo {
+      max-width: 100%;
+      text-align: center;
+    }
+  
+    .conteudo h1.titulo, #inicio .conteudo h1 {
+      font-size: 32px;
+    }
+  
+    .conteudo p {
+      font-size: 16px;
+      line-height: 1.5;
+      margin-bottom: 15px;
+    }
+  
+    .conteudo .texto {
+      padding: 15px;
+    }
+  
+    .explore-profissoes, .botao-voltar {
+      padding: 10px 20px;
+      font-size: 0.9rem;
+      margin: 5px 0;
+    }
+  
+    .container .imagem img {
+      max-width: 100%;
+      height: auto;
+    }
+  
+    .container .imagem {
+      width: 90%;
+    }
+  
+    nav .header-nav.active {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #A8BF61;
+      padding: 10px;
+      border-radius: 8px;
+      width: 100%;
+    }
+  
+    nav .header-nav li {
+      margin: 5px 0;
+    }
+  
+    #inicio .conteudo {
+      padding: 10px;
+    }
+  
+    #inicio .conteudo p {
+      font-size: 14px;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+  
+    #inicio .conteudo h1 {
+      font-size: 28px;
+    }
+  
+    .grupo {
+      padding: 15px;
+      height: auto;
+      flex-direction: column;
+    }
+  
+    .section img {
+      max-height: 200px;
+    }
+  }
