@@ -11,7 +11,7 @@ Giovanna Xavier
 
 ## Sobre
 
-O objetivo deste projeto é colocar em prática os conhecimentos adquiridos sobre as linguagens de marcação , HTML, CSS e markdown, durante o curso Técnico em Desenvolvimento de Sistemas do [SENAI Jandira](https://sp.senai.br/unidade/jandira/).
+O objetivo deste projeto é desenvolver um website responsivo e informativo para divulgar uma matéria do 2º ano do Ensino Médio (Biologia) e colocar em prática os conhecimentos adquiridos sobre as linguagens de marcação , HTML, CSS e markdown, durante o curso Técnico em Desenvolvimento de Sistemas do [SENAI Jandira](https://sp.senai.br/unidade/jandira/).
 
 ---
 
