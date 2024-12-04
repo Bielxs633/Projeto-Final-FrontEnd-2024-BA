@@ -2,6 +2,7 @@
 ## Projeto Final - FrontEnd
 
 Gabriel Soares
+<br>
 Giovanna Xavier
 
 ![image](https://github.com/user-attachments/assets/a2444211-7519-429d-85c8-6cdcca328d61)
@@ -17,12 +18,12 @@ O objetivo deste projeto é colocar em prática os conhecimentos adquiridos sobr
 ## Tecnologias utilizadas
 - HTML
 - CSS
-- JavaScript
 - Markdown
+- JavaScript
 - git
 
 ---
 
 ## Autores
 - [Gabriel Soares](https://www.linkedin.com/in/gabriel-soares-3098782b0/)
-- [Giovanna Xavier](https://github.com/gioxavier7).
+- [Giovanna Xavier](https://github.com/gioxavier7)
