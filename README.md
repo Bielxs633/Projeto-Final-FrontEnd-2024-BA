@@ -3,7 +3,8 @@
 ## Prévia do Site
 
 **Tela Principal - Desktop, Tablet e Mobile:**
-![Tela Principal](./images/site.png)
+![image](https://github.com/user-attachments/assets/9f8f6fd5-ca25-4f5c-9795-768a67ed06a1)
+
 
 ## Visão Geral
 Este projeto é um website informativo e responsivo voltado para o estudo da Biologia no 2º ano do Ensino Médio, com foco em conteúdos educacionais e nas profissões relacionadas à área. Além disso, o site faz uma conexão entre Biologia e Desenvolvimento de Sistemas, destacando o papel da tecnologia no avanço das ciências biológicas.
