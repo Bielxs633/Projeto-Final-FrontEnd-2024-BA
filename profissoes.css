@@ -289,7 +289,7 @@ main {
     }
 
     .container .imagem img {
-        max-width: 80%;
+        max-width: 70%;
         height: auto;
     }
 
@@ -325,7 +325,7 @@ main {
 
 }
 
-/* Responsividade para mobile (iPhone SE e afins) */
+/* Responsividade para mobile */
 @media (max-width: 768px) {
     header {
       padding: 10px;
@@ -367,7 +367,7 @@ main {
     }
   
     .conteudo p {
-      font-size: 16px;
+      font-size: 12px;
       line-height: 1.5;
       margin-bottom: 15px;
     }
@@ -411,9 +411,8 @@ main {
   
     #inicio .conteudo p {
       font-size: 14px;
-      text-overflow: ellipsis;
-      overflow: hidden;
     }
+  
   
     #inicio .conteudo h1 {
       font-size: 28px;
